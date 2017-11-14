@@ -1,1 +1,1 @@
-allow adbd self:capability sys_admin;
+set_prop(adbd, ctl_mdnsd_prop);
