@@ -4,3 +4,6 @@ allow system_app cache_recovery_file:file {create rw_file_perms};
 
 # LiveDisplay
 hal_client_domain(system_app, hal_lineage_livedisplay)
+
+# Allow Settings to set legacy wfd videomode prop
+set_prop(system_app, wfd_legacy_video_mode_prop);
