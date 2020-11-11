@@ -1,2 +1,5 @@
 adb.network.port              u:object_r:adbtcp_prop:s0
 persist.wfd.legacy.video.mode u:object_r:wfd_legacy_video_mode_prop:s0
+
+# Recovery update
+persist.vendor.recovery_update         u:object_r:recovery_update_prop:s0
