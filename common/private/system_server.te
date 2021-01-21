@@ -8,6 +8,7 @@ allow system_server pocket_service:service_manager { add find };
 # Use HALs
 hal_client_domain(system_server, hal_lineage_fod)
 hal_client_domain(system_server, hal_lineage_livedisplay)
+hal_client_domain(system_server, hal_syberia_smartcharge)
 
 # Long screenshot
 add_service(system_server, longshot_service)
