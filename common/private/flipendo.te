@@ -42,3 +42,6 @@ allow flipendo color_display_service:service_manager find;
 
 # Allow flipendo to find hal_power_service
 allow flipendo hal_power_service:service_manager find;
+
+# Access to PowerHal service
+hal_client_domain(flipendo, hal_power);
