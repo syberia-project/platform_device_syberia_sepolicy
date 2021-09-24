@@ -1,0 +1,2 @@
+allow system_app sysfs_graphics:dir search;
+allow system_app sysfs_graphics:file r_file_perms;
