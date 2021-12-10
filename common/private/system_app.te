@@ -9,7 +9,7 @@ hal_client_domain(system_app, hal_lineage_livedisplay)
 set_prop(system_app, wfd_legacy_video_mode_prop);
 
 # Allow SmartCharge HAL service to be found
-hal_client_domain(system_app, hal_syberia_smartcharge)
+#hal_client_domain(system_app, hal_syberia_smartcharge)
 
 # Allow SetupWizard to set recovery update prop
 #set_prop(system_app, recovery_update_prop)
