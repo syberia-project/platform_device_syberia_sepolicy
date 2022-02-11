@@ -3,3 +3,4 @@ persist.wfd.legacy.video.mode u:object_r:wfd_legacy_video_mode_prop:s0
 
 # Recovery update
 persist.vendor.recovery_update         u:object_r:recovery_update_prop:s0
+persist.powerusage_provider_google     u:object_r:powerusage_provider_prop:s0
