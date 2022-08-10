@@ -1,5 +1,0 @@
-type hal_syberia_smartcharge_default, domain;
-hal_server_domain(hal_syberia_smartcharge_default, hal_syberia_smartcharge)
-
-type hal_syberia_smartcharge_default_exec, exec_type, system_file_type, file_type;
-init_daemon_domain(hal_syberia_smartcharge_default)
