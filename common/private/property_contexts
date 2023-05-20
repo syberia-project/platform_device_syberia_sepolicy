@@ -6,5 +6,8 @@ persist.powerusage_provider_google     u:object_r:exported_system_prop:s0
 vendor.camera.aux.packageexcludelist   u:object_r:vendor_persist_camera_prop:s0
 vendor.camera.aux.packagelist          u:object_r:vendor_persist_camera_prop:s0
 
+# Dolby
+ro.vendor.audio.dolby.dax.support	u:object_r:exported_system_prop:s0
+
 # Recovery update
 persist.vendor.recovery_update         u:object_r:recovery_update_prop:s0
