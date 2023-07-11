@@ -21,3 +21,6 @@ get_prop(system_server, vendor_persist_camera_prop)
 
 # Let system server toggle xtra-daemon
 set_prop(system_server, xtra_control_prop)
+
+# Parallel Space
+add_service(system_server, parallel_space_manager_service);
