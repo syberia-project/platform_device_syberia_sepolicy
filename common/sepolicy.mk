@@ -23,3 +23,9 @@ BOARD_SEPOLICY_DIRS += \
     device/syberia/sepolicy/common/dynamic \
     device/syberia/sepolicy/common/vendor
 endif
+
+ifneq ($(BOARD_USES_QCOM_HARDWARE), true)
+# Microsoft
+BOARD_SEPOLICY_DIRS += \
+    device/parasite/sepolicy/common/private/microsoft
+endif
