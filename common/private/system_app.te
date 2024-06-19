@@ -1,15 +1,5 @@
-# For the updaters
-allow system_app cache_recovery_file:dir {add_name rw_file_perms};
-allow system_app cache_recovery_file:file {create rw_file_perms};
-
 # LiveDisplay
 hal_client_domain(system_app, hal_lineage_livedisplay)
 
 # Allow SetupWizard to set recovery update prop
 #set_prop(system_app, recovery_update_prop)
-
-# Read selinux status
-allow system_app selinuxfs:file r_file_perms;
-
-# Allow settings to set some system props
-set_prop(system_app, exported_system_prop)

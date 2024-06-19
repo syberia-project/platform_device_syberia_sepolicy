@@ -1,16 +1,5 @@
-# MatLog calls dmesg
-allow platform_app kernel:system syslog_read;
-
 # Allow NFC service to be found
 allow platform_app nfc_service:service_manager find;
-
-# OTA
-allow platform_app cache_file:dir { search write add_name };
-allow platform_app cache_recovery_file:dir { search write add_name };
-allow platform_app cache_recovery_file:file { create write open getattr setattr };
-
-# Allow exTHmUI's custom properties to be changed
-allow platform_app system_prop:property_service set;
 
 # Allow LiveDisplay HAL service to be found
 hal_client_domain(platform_app, hal_lineage_livedisplay)
@@ -22,7 +11,4 @@ hal_client_domain(platform_app, hal_lineage_fod)
 hal_client_domain(platform_app, hal_syberia_smartcharge)
 
 # Allow storage access to files app
-allow platform_app mnt_pass_through_file:dir { create_dir_perms getattr mounton search };
-
-# Allow bypassing the FUSE layer
-r_dir_file(platform_app, mnt_pass_through_file)
+allow platform_app mnt_pass_through_file:dir { create_dir_perms mounton };

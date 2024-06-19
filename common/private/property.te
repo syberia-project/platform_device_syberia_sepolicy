@@ -1,3 +1,2 @@
-type userinit_prop, property_type;
-type adbtcp_prop, property_type;
-type recovery_update_prop, property_type, extended_core_property_type;
+# Recovery update
+system_internal_prop(recovery_update_prop)

@@ -1,0 +1,1 @@
+genfscon sysfs /module/mmcblk/parameters/perdev_minors u:object_r:sysfs_perdev_minors:s0

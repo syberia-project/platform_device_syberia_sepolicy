@@ -1,5 +1,4 @@
 allow system_server storage_stub_file:dir getattr;
-set_prop(system_server, shell_prop)
 
 allow system_server pocket_judge_sysfs:dir search;
 allow system_server pocket_judge_sysfs:file rw_file_perms;
@@ -7,20 +6,12 @@ allow system_server pocket_service:service_manager { add find };
 
 add_service(system_server, app_lock_service);
 
-allow system_server app_zygote:process getpgid;
-
 # Use HALs
 hal_client_domain(system_server, hal_lineage_fod)
 hal_client_domain(system_server, hal_lineage_livedisplay)
-
-# Long screenshot
-add_service(system_server, longshot_service)
 
 # Let system server find auxiliary camera properties
 get_prop(system_server, vendor_persist_camera_prop)
 
 # Let system server toggle xtra-daemon
 set_prop(system_server, xtra_control_prop)
-
-# Parallel Space
-add_service(system_server, parallel_space_manager_service);
